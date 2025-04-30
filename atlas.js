@@ -16,7 +16,7 @@ function loadCountries(region) {
             let blockCountry = `
             <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
                 <div class="card">
-                <img class="card-img-top" style="width: 300px; height: 200px;" src="${country.flags.png} " alt="Czech" />
+                <img class="card-img-top" src="${country.flags.png} " alt="Czech" />
                 <div class="card-body">
                     <h4 class="card-title"><a href="#">${country.translations.ces.common}</a></h4>
                     <p class="card-text">Hlavní město:  <b>${country.capital[0]}</b></p>
@@ -41,13 +41,16 @@ document.querySelectorAll('button[data-name]').forEach(button => {
                     <h3>${country.translations.ces.common}</h3>
                     `;
 
+                    const currencyCode = Object.keys(country.currencies)[0];
+                    const currency = country.currencies[currencyCode];
+
                     modalBody.innerHTML = `
                     <h5>Hlavní město: <b>${country.capital[0]}</b></h5>
-                    <p>Rozloha: <b>${country.area}</b></p>
+                    <p>Rozloha: <b>${country.area} km&sup2</b></p>
                     <p>Počet obyvatel: <b>${country.population}</b></p>
                     <p>Hraničí s: <b>${country.borders}</b></p>
                     <p>Časové pásmo: <b>${country.timezones}</b></p>
-                    <p>Měna: <b>${country.currencies.name}</b> ${country.currencies.symbol}</p>
+                    <p>Měna: <b>${currency.name} ${currency.symbol}</b></p>
                     `;
                 })
                 .catch(error => {

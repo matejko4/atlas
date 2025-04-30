@@ -1,0 +1,72 @@
+header{
+    
+    background-color: #8bff07;
+}
+body {
+    background-color: #3b3b3b;
+    font-family: 'Arial', sans-serif;
+  }
+  .card {
+    margin: 15px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.06);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+  }
+  
+
+  .card-img-top {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+  }
+  
+
+  .card-body .btn-info {
+    width: 100%;
+    font-weight: 500;
+  }
+  
+  #continent {
+    color: #ffffff ;
+    background-color: #1d1c1c;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  
+
+#one-country .modal-header {
+    background-color: #8bff07 ; 
+    color: black ;
+    justify-content: center;
+  }
+  
+  #one-country .modal-title {
+    font-size: 24px ;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+  }
+  
+  #one-country .modal-body {
+    background-color: #1d1c1c ;
+    color: #ffffff ;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  #one-country .modal-footer{
+    background-color: #1d1c1c ;
+    color: #ffffff ;
+  }
+  
+  #modal-body-content p {
+    margin-bottom: 10px;
+  }
+  
+  #modal-body-content b {
+    color: #698a1b;
+  }
