@@ -18,7 +18,7 @@ function loadCountries(region) {
                 <div class="card">
                 <img class="card-img-top" src="${country.flags.png} " alt="Czech" />
                 <div class="card-body">
-                    <h4 class="card-title"><a href="#">${country.translations.ces.common}</a></h4>
+                    <h4 class="card-title">${country.translations.ces.common}</h4>
                     <p class="card-text">Hlavní město:  <b>${country.capital[0]}</b></p>
                     <p><button type="button" class="btn btn-info"
                         data-name="${country.name.common}">Informace</button></p>

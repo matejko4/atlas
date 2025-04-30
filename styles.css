@@ -10,21 +10,27 @@ body {
     margin: 15px 0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+  .card-title {
+    color: #698a1b;
+  }
   
   .card:hover {
     transform: scale(1.06);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
   }
-  
 
   .card-img-top {
     object-fit: cover;
     width: 100%;
     height: 200px;
   }
-  
+  .btn-danger {
+    background-color: #ff0707;
+    font-weight: 500;
+  }
 
   .card-body .btn-info {
+    background-color: #8bff07 !important;
     width: 100%;
     font-weight: 500;
   }
@@ -37,7 +43,6 @@ body {
     font-size: 16px;
   }
   
-
 #one-country .modal-header {
     background-color: #8bff07 ; 
     color: black ;
@@ -70,3 +75,4 @@ body {
   #modal-body-content b {
     color: #698a1b;
   }
+  
